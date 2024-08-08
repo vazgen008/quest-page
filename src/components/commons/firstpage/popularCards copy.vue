@@ -5,7 +5,7 @@
     <div class="popular-cards__movie" v-for="(popcard, i) in cards" :key="i" >
         <RouterLink :to="{name:'SingleMovie',params: { id:popcard.id,username:SingleUser ? SingleUser.username : 'notregistered'} } ">
         <div class="popular-cards__movie__background popular-background" >
-            <img class="hoverimg" :src="'/src/components/commons/img/movie'+popcard?.id+'.jpg'" alt="">
+            <img class="hoverimg" :src="'/img/movie'+popcard?.id+'.jpg'" alt="">
             <div class="popular-background__hover">
                 <p>{{popcard?.hover}} </p>
             </div>
