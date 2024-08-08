@@ -1,6 +1,6 @@
  <template> 
  
-        <div class="Single-card" :style="{ backgroundImage: `url(/src/components/commons/img/movie${cards?.id}.jpg)`,backgroundPosition: 'center' }">
+        <div class="Single-card" :style="{ backgroundImage: `url(/img/movie${cards?.id}.jpg)`,backgroundPosition: 'center' }">
                 <NavBar/>
 
             <div class="card-information-all">
