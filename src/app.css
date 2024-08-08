@@ -1,0 +1,37 @@
+:root{
+    --color-blue: red;
+    --color-black:#161722;
+    --color-skin:#FFD2A4;
+    --color-darkskin:#F2C79B;
+    --color-lightorange:#FFF5EB;
+    --color-darkorange:#FFD2A4;
+    --color-lightgray:#F5F2F0;
+
+    --font-size--1:64px;
+    --font-size--2:48px;
+    --font-size--3:40px;
+    --font-size--4:32px;
+    --font-size--5:24px;
+    --font-size--6:16px;
+
+    
+}
+h1{
+    font-family:  Roboto;
+    font-size:var(--font-size--1)
+}
+h2{
+    font-size: var(--font-size--2);
+}
+h3{
+    font-size: var(--font-size--3);
+}
+h4{
+    font-size: var(--font-size--4);
+}
+h5{
+    font-size: var(--font-size--5);
+}
+h6{
+    font-size: var(--font-size--6);
+}
