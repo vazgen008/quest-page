@@ -1,9 +1,8 @@
 <template>
-  <About/>
+<p>about page</p>
 </template>
 
 <script setup>
-import About from '../components/commons/aboutQuests/aboutquests.vue'
 </script>
 
 <style>
