@@ -6,7 +6,7 @@
         <div class="single--order">
             <RouterLink :to="{name:'SingleMovie',params: { id:popcard.id } } ">
             <div class="single--image">
-                <img class="hoverimg" :src="'/src/components/commons/img/movie'+popcard.id+'.jpg'" alt="">
+                <img class="hoverimg" :src="'/img/movie'+popcard.id+'.jpg'" alt="">
             </div>
             </RouterLink>
             <div class="single--information">
