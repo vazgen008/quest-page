@@ -51,9 +51,7 @@ const BasicInfo = ref({
 })
 const BasicNext = function(){
   console.log(BasicInfo,'Basicinfo')
-  console.log(this.BasicInfo,'his.BasicInfo')
-  console.log(this.BasicInfo.name,'his.BasicInfo.name')
-    if(Object.values(this.BasicInfo).every(value => !!value)){
+    if(Object.values(BasicInfo).every(value => !!value)){
        const allusers = JSON.parse(localStorage.getItem('AllUsers'))
        if(allusers.some(user => user.email == BasicInfo.value.email)){
         errors.value.emailError = 'someone is already registered with this email'
@@ -64,14 +62,14 @@ const BasicNext = function(){
           errors.value.numberError = 'someone is already registered with this phone number or its not like example'
        }else{
         Object.keys(errors.value).forEach(key => {
-          this.errors[key] = '';
+          errors[key] = '';
         });
           BasicInfoFiled.value = true
           MainFiled.value = false
        }
     }else{
       Object.keys(errors.value).forEach(key => {
-        this.errors[key] = 'fill the inputs';
+        errors[key] = 'fill the inputs';
       });
     }
 }
@@ -91,7 +89,7 @@ const MainPrev = function(){
 }
 
 const MainNext = function(){
-    if(Object.values(this.MainInfo).every(value => !!value)){
+    if(Object.values(MainInfo).every(value => !!value)){
        const allusers = JSON.parse(localStorage.getItem('AllUsers'))
 
        if(allusers.some(user => user.username == MainInfo.value.username)){
