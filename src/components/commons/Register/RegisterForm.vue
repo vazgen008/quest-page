@@ -50,6 +50,8 @@ const BasicInfo = ref({
     number:''
 })
 const BasicNext = function(){
+  console.log(BasicInfo)
+  console.log(this.BasicInfo)
     console.log(this.BasicInfo.name)
     if(Object.values(this.BasicInfo).every(value => !!value)){
        const allusers = JSON.parse(localStorage.getItem('AllUsers'))
