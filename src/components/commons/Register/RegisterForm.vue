@@ -62,14 +62,14 @@ const BasicNext = function(){
           errors.value.numberError = 'someone is already registered with this phone number or its not like example'
        }else{
         Object.keys(errors.value).forEach(key => {
-          errors[key] = '';
+          this.errors[key] = '';
         });
           BasicInfoFiled.value = true
           MainFiled.value = false
        }
     }else{
       Object.keys(errors.value).forEach(key => {
-        errors[key] = 'fill the inputs';
+        this.errors[key] = 'fill the inputs';
       });
     }
 }
@@ -89,7 +89,7 @@ const MainPrev = function(){
 }
 
 const MainNext = function(){
-    if(Object.values(MainInfo).every(value => !!value)){
+    if(Object.values(this.MainInfo).every(value => !!value)){
        const allusers = JSON.parse(localStorage.getItem('AllUsers'))
 
        if(allusers.some(user => user.username == MainInfo.value.username)){
