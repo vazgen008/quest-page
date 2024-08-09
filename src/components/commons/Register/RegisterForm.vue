@@ -50,9 +50,9 @@ const BasicInfo = ref({
     number:''
 })
 const BasicNext = function(){
-  console.log(BasicInfo)
-  console.log(this.BasicInfo)
-    console.log(this.BasicInfo.name)
+  console.log(BasicInfo,'Basicinfo')
+  console.log(this.BasicInfo,'his.BasicInfo')
+  console.log(this.BasicInfo.name,'his.BasicInfo.name')
     if(Object.values(this.BasicInfo).every(value => !!value)){
        const allusers = JSON.parse(localStorage.getItem('AllUsers'))
        if(allusers.some(user => user.email == BasicInfo.value.email)){
